@@ -14,8 +14,3 @@
 ## API запросов из мобильного приложения (MA) к учетной системе (1С)
 
 ### Версия протокола 1 (v1)
-
-[Balance - запрос остатков бонусных баллов](https://github.com/laptev-av/NikBan-MA/blob/master/Documents/MobileApp-API/v1/Balance.md)
-
-[MobileAppKey - запрос на получение уникального идентификатора мобильного приложения](https://github.com/laptev-av/NikBan-MA/blob/master/Documents/MobileApp-API/v1/MobileAppKey.md)
-
