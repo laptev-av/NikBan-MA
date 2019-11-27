@@ -1,0 +1,557 @@
+{
+	"info": {
+		"_postman_id": "56c7f38d-1b89-43b9-941e-a4192b483d0d",
+		"name": "NikBan MobileApp API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "MobileAppKey",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"PhoneNumber\":\"79293557688\"}"
+				},
+				"url": {
+					"raw": "https://srv.st-pro.su/rz_nikban/hs/mobile-app/v1/MobileAppKey/",
+					"protocol": "https",
+					"host": [
+						"srv",
+						"st-pro",
+						"su"
+					],
+					"path": [
+						"rz_nikban",
+						"hs",
+						"mobile-app",
+						"v1",
+						"MobileAppKey",
+						""
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "MobileAppKey - Номер телефона  не зарегистрирован",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/x-www-form-urlencoded",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"PhoneNumber\":\"79293557681\"}"
+						},
+						"url": {
+							"raw": "https://srv.st-pro.su/rz_nikban/hs/mobile-app/v1/MobileAppKey/",
+							"protocol": "https",
+							"host": [
+								"srv",
+								"st-pro",
+								"su"
+							],
+							"path": [
+								"rz_nikban",
+								"hs",
+								"mobile-app",
+								"v1",
+								"MobileAppKey",
+								""
+							]
+						}
+					},
+					"status": "Not found",
+					"code": 404,
+					"_postman_previewlanguage": "html",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Sun, 24 Nov 2019 17:24:41 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "Apache/2.4.41 (Win64) OpenSSL/1.1.1c"
+						},
+						{
+							"key": "Content-Length",
+							"value": "89"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5, max=100"
+						},
+						{
+							"key": "Connection",
+							"value": "Keep-Alive"
+						},
+						{
+							"key": "Content-Type",
+							"value": "text/html; charset=utf-8"
+						}
+					],
+					"cookie": [],
+					"body": "MobileAppKey: Номер телефона 79293557681 не зарегистрирован"
+				},
+				{
+					"name": "MobileAppKey - правильный запрос",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/x-www-form-urlencoded",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"PhoneNumber\":\"79293557688\"}"
+						},
+						"url": {
+							"raw": "https://srv.st-pro.su/rz_nikban/hs/mobile-app/v1/MobileAppKey/",
+							"protocol": "https",
+							"host": [
+								"srv",
+								"st-pro",
+								"su"
+							],
+							"path": [
+								"rz_nikban",
+								"hs",
+								"mobile-app",
+								"v1",
+								"MobileAppKey",
+								""
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "html",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Sun, 24 Nov 2019 17:20:08 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "Apache/2.4.41 (Win64) OpenSSL/1.1.1c"
+						},
+						{
+							"key": "Content-Length",
+							"value": "55"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5, max=100"
+						},
+						{
+							"key": "Connection",
+							"value": "Keep-Alive"
+						},
+						{
+							"key": "Content-Type",
+							"value": "text/html; charset=utf-8"
+						}
+					],
+					"cookie": [],
+					"body": "{\"MobileAppKey\":\"b0d4ce5d-2757-4699-948c-cfa72ba94f86\"}"
+				},
+				{
+					"name": "MobileAppKey - Отсутствует параметр \"PhoneNumber\"",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/x-www-form-urlencoded",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"Phone\":\"79293557688\"}"
+						},
+						"url": {
+							"raw": "https://srv.st-pro.su/rz_nikban/hs/mobile-app/v1/MobileAppKey/",
+							"protocol": "https",
+							"host": [
+								"srv",
+								"st-pro",
+								"su"
+							],
+							"path": [
+								"rz_nikban",
+								"hs",
+								"mobile-app",
+								"v1",
+								"MobileAppKey",
+								""
+							]
+						}
+					},
+					"status": "Not found",
+					"code": 404,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Sun, 24 Nov 2019 17:18:28 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "Apache/2.4.41 (Win64) OpenSSL/1.1.1c"
+						},
+						{
+							"key": "Content-Length",
+							"value": "67"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5, max=100"
+						},
+						{
+							"key": "Connection",
+							"value": "Keep-Alive"
+						},
+						{
+							"key": "Content-Type",
+							"value": "text/html; charset=utf-8"
+						}
+					],
+					"cookie": [],
+					"body": "MobileAppKey: Отсутствует параметр \"PhoneNumber\""
+				}
+			]
+		},
+		{
+			"name": "Balance",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/x-www-form-urlencoded"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"MobileAppKey\":\"b0d4ce5d-2757-4699-948c-cfa72ba94f87\"}"
+				},
+				"url": {
+					"raw": "https://srv.st-pro.su/rz_nikban/hs/mobile-app/v1/Balance/",
+					"protocol": "https",
+					"host": [
+						"srv",
+						"st-pro",
+						"su"
+					],
+					"path": [
+						"rz_nikban",
+						"hs",
+						"mobile-app",
+						"v1",
+						"Balance",
+						""
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Balance - мобильное приложение не зарегистрировано",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"type": "text",
+								"value": "application/x-www-form-urlencoded"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"MobileAppKey\":\"b0d4ce5d-2757-4699-948c-cfa72ba94f87\"}"
+						},
+						"url": {
+							"raw": "https://srv.st-pro.su/rz_nikban/hs/mobile-app/v1/Balance/",
+							"protocol": "https",
+							"host": [
+								"srv",
+								"st-pro",
+								"su"
+							],
+							"path": [
+								"rz_nikban",
+								"hs",
+								"mobile-app",
+								"v1",
+								"Balance",
+								""
+							]
+						}
+					},
+					"status": "Not found",
+					"code": 404,
+					"_postman_previewlanguage": "html",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Sun, 24 Nov 2019 17:51:20 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "Apache/2.4.41 (Win64) OpenSSL/1.1.1c"
+						},
+						{
+							"key": "Content-Length",
+							"value": "86"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5, max=100"
+						},
+						{
+							"key": "Connection",
+							"value": "Keep-Alive"
+						},
+						{
+							"key": "Content-Type",
+							"value": "text/html; charset=utf-8"
+						}
+					],
+					"cookie": [],
+					"body": "Balance: Мобильное приложение не зарегестрировано"
+				},
+				{
+					"name": "Balance - правильный запрос",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"type": "text",
+								"value": "application/x-www-form-urlencoded"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"MobileAppKey\":\"b0d4ce5d-2757-4699-948c-cfa72ba94f86\"}"
+						},
+						"url": {
+							"raw": "https://srv.st-pro.su/rz_nikban/hs/mobile-app/v1/Balance/",
+							"protocol": "https",
+							"host": [
+								"srv",
+								"st-pro",
+								"su"
+							],
+							"path": [
+								"rz_nikban",
+								"hs",
+								"mobile-app",
+								"v1",
+								"Balance",
+								""
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "html",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Sun, 24 Nov 2019 17:47:07 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "Apache/2.4.41 (Win64) OpenSSL/1.1.1c"
+						},
+						{
+							"key": "Content-Length",
+							"value": "18"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5, max=100"
+						},
+						{
+							"key": "Connection",
+							"value": "Keep-Alive"
+						},
+						{
+							"key": "Content-Type",
+							"value": "text/html; charset=utf-8"
+						}
+					],
+					"cookie": [],
+					"body": "{\"Amount\":\"12567\"}"
+				},
+				{
+					"name": "Balance - ошибка параметра",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"type": "text",
+								"value": "application/x-www-form-urlencoded"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"AppKey\":\"b0d4ce5d-2757-4699-948c-cfa72ba94f86\"}"
+						},
+						"url": {
+							"raw": "https://srv.st-pro.su/rz_nikban/hs/mobile-app/v1/Balance/",
+							"protocol": "https",
+							"host": [
+								"srv",
+								"st-pro",
+								"su"
+							],
+							"path": [
+								"rz_nikban",
+								"hs",
+								"mobile-app",
+								"v1",
+								"Balance",
+								""
+							]
+						}
+					},
+					"status": "Not found",
+					"code": 404,
+					"_postman_previewlanguage": "html",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Sun, 24 Nov 2019 17:49:11 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "Apache/2.4.41 (Win64) OpenSSL/1.1.1c"
+						},
+						{
+							"key": "Content-Length",
+							"value": "63"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5, max=100"
+						},
+						{
+							"key": "Connection",
+							"value": "Keep-Alive"
+						},
+						{
+							"key": "Content-Type",
+							"value": "text/html; charset=utf-8"
+						}
+					],
+					"cookie": [],
+					"body": "Balance: Отсутствует параметр \"MobileAppKey\""
+				}
+			]
+		},
+		{
+			"name": "Version",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://srv.st-pro.su/rz_nikban/hs/mobile-app/v",
+					"protocol": "https",
+					"host": [
+						"srv",
+						"st-pro",
+						"su"
+					],
+					"path": [
+						"rz_nikban",
+						"hs",
+						"mobile-app",
+						"v"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Version (v)",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://srv.st-pro.su/rz_nikban/hs/mobile-app/v",
+							"protocol": "https",
+							"host": [
+								"srv",
+								"st-pro",
+								"su"
+							],
+							"path": [
+								"rz_nikban",
+								"hs",
+								"mobile-app",
+								"v"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "html",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Wed, 27 Nov 2019 05:05:22 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "Apache/2.4.41 (Win64) OpenSSL/1.1.1c"
+						},
+						{
+							"key": "Content-Length",
+							"value": "20"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5, max=100"
+						},
+						{
+							"key": "Connection",
+							"value": "Keep-Alive"
+						},
+						{
+							"key": "Content-Type",
+							"value": "text/html; charset=utf-8"
+						}
+					],
+					"cookie": [],
+					"body": "MobileApp-API.v1.001"
+				}
+			]
+		}
+	],
+	"protocolProfileBehavior": {}
+}
